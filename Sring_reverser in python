@@ -1,4 +1,0 @@
-def string_reverser(word):
-    return word[::-1]
-    
-print(string_reverser("come"))
