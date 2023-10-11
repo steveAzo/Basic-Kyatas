@@ -9,3 +9,12 @@ def persistence(n):
         product *= digit
         
     return 1 + persistence(product)
+
+n = input("What number do you want to check out? ")
+try:
+    number = int(n)
+    result = persistence(number)
+    print(f"The multiplicative persistence of {number} is {result}")
+
+except ValueError:
+    print("Invalid input, Please enter a valid number:")
